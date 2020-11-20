@@ -33,4 +33,8 @@ public class Repository {
     public void addCommit(Commit commit){
         this.commits.add(commit);
     }
+
+//    public void getCommitByID(Commit commit){
+//        if(this.commits)
+//    }
 }

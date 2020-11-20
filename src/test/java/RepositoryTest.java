@@ -39,4 +39,9 @@ public class RepositoryTest {
         assertEquals(1, newRepository.getCommits());
     }
 
+//    @Test
+//    public void canGetCommitByID(){
+//
+//    }
+
 }
