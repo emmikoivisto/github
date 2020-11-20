@@ -24,4 +24,8 @@ public class GitHubAccount {
     public int getRepositories(){
         return this.repositories.size();
     }
+
+    public void addRepository(Repository repository){
+        this.repositories.add(repository);
+    }
 }

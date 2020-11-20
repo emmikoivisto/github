@@ -27,4 +27,12 @@ public class GitHubAccountTest {
     public void repositoryStartsEmpty(){
         assertEquals(0, gitHubAccount.getRepositories());
     }
+
+    @Test
+    public void canAddRepository(){
+        gitHubAccount.addRepository(repository);
+        assertEquals(1, gitHubAccount.getRepositories());
+    }
+
+
 }
