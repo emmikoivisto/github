@@ -26,4 +26,9 @@ public class RepositoryTest {
     public void canGetRepoName(){
         assertEquals("Githublab", newRepository.getRepoName());
     }
+
+    @Test
+    public void canGetRepoDescription(){
+        assertEquals("Java practice lab", newRepository.getDescription());
+    }
 }

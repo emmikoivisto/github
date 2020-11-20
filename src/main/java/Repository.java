@@ -25,4 +25,8 @@ public class Repository {
     public String getRepoName(){
         return this.repositoryName;
     }
+
+    public String getDescription(){
+        return this.description;
+    }
 }
