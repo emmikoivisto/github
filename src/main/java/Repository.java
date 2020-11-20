@@ -29,4 +29,8 @@ public class Repository {
     public String getDescription(){
         return this.description;
     }
+
+    public void addCommit(Commit commit){
+        this.commits.add(commit);
+    }
 }
