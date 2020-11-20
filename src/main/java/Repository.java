@@ -11,9 +11,14 @@ public class Repository {
         this.repositoryName = repositoryName;
         this.description = description;
         this.repository = repository;
+        this.commits = new ArrayList<>();
     }
 
     public RepositoryType getRepositoryType(){
         return this.repository;
+    }
+
+    public int getCommits(){
+        return commits.size();
     }
 }

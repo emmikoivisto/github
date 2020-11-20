@@ -16,4 +16,9 @@ public class RepositoryTest {
     public void canGetRepositoryType(){
         assertEquals(RepositoryType.PRIVATE, newRepository.getRepositoryType());
     }
+
+    @Test
+    public void commitListStartsEmpty(){
+        assertEquals(0, newRepository.getCommits());
+    }
 }
