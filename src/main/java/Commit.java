@@ -11,4 +11,8 @@ public class Commit {
         return this.uniqueID;
     }
 
+    public String getDescription(){
+        return this.description;
+    }
+
 }

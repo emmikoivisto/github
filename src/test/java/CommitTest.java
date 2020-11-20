@@ -16,4 +16,9 @@ public class CommitTest {
     public void checkCommitHasID(){
         assertEquals(2345, commit.getID());
     }
+
+    @Test
+    public void checkCommitHasDescription(){
+        assertEquals("Initial commit", commit.getDescription());
+    }
 }
