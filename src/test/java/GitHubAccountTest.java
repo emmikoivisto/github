@@ -34,5 +34,11 @@ public class GitHubAccountTest {
         assertEquals(1, gitHubAccount.getRepositories());
     }
 
-
+    @Test
+    public void canAddMultipleRepos(){
+        gitHubAccount.addRepository(repository);
+        gitHubAccount.addRepository(repository);
+        gitHubAccount.addRepository(repository);
+        assertEquals(3, gitHubAccount.getRepositories());
+    }
 }
