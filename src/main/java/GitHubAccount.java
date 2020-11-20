@@ -16,4 +16,12 @@ public class GitHubAccount {
     public AccountType getAccountType(){
         return this.accountType;
     }
+
+    public String getUsername(){
+        return this.username;
+    }
+
+    public int getRepositories(){
+        return this.repositories.size();
+    }
 }

@@ -17,4 +17,14 @@ public class GitHubAccountTest {
     public void canGetAccountType(){
         assertEquals(AccountType.FREE, gitHubAccount.getAccountType());
     }
+
+    @Test
+    public void canGetUsername(){
+        assertEquals("Coder", gitHubAccount.getUsername());
+    }
+
+    @Test
+    public void repositoryStartsEmpty(){
+        assertEquals(0, gitHubAccount.getRepositories());
+    }
 }
