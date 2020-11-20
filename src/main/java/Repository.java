@@ -12,4 +12,8 @@ public class Repository {
         this.description = description;
         this.repository = repository;
     }
+
+    public RepositoryType getRepositoryType(){
+        return this.repository;
+    }
 }
