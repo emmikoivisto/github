@@ -21,4 +21,9 @@ public class RepositoryTest {
     public void commitListStartsEmpty(){
         assertEquals(0, newRepository.getCommits());
     }
+
+    @Test
+    public void canGetRepoName(){
+        assertEquals("Githublab", newRepository.getRepoName());
+    }
 }

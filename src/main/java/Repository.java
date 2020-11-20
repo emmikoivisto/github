@@ -21,4 +21,8 @@ public class Repository {
     public int getCommits(){
         return commits.size();
     }
+
+    public String getRepoName(){
+        return this.repositoryName;
+    }
 }
