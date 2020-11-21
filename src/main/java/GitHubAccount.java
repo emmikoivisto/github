@@ -29,5 +29,13 @@ public class GitHubAccount {
         this.repositories.add(repository);
     }
 
-
+    public Repository getRepositoryByName(String repoToFind) {
+        Repository foundRepo = null;
+        for (Repository repository : this.repositories) {
+            if (repository.getRepoName().equals(repoToFind)) {
+                foundRepo = repository;
+            }
+        }
+        return foundRepo;
+    }
 }

@@ -7,10 +7,13 @@ public class GitHubAccountTest {
 
     GitHubAccount gitHubAccount;
     Repository repository;
+    Repository repository1;
 
     @Before
     public void before(){
         gitHubAccount = new GitHubAccount("Coder", "Alfred", AccountType.FREE);
+        repository = new Repository("GithubLab", "Weekend homework", RepositoryType.PRIVATE);
+        repository1 = new Repository("Hotel Lab", "Homework", RepositoryType.PUBLIC);
     }
 
     @Test
@@ -40,5 +43,12 @@ public class GitHubAccountTest {
         gitHubAccount.addRepository(repository);
         gitHubAccount.addRepository(repository);
         assertEquals(3, gitHubAccount.getRepositories());
+    }
+
+    @Test
+    public void caGetRepositoryByName(){
+        gitHubAccount.addRepository(repository);
+        gitHubAccount.addRepository(repository1);
+        assertEquals(repository1, gitHubAccount.getRepositoryByName("Hotel Lab"));
     }
 }
