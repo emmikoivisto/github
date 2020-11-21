@@ -7,10 +7,13 @@ public class RepositoryTest {
 
     Repository newRepository;
     Commit commit;
+    Commit commit1;
 
     @Before
     public void before(){
         newRepository = new Repository("Githublab", "Java practice lab", RepositoryType.PRIVATE);
+        commit = new Commit("Initial commit", "1234");
+        commit1 = new Commit("Second commit", "2344");
     }
 
     @Test
@@ -39,9 +42,11 @@ public class RepositoryTest {
         assertEquals(1, newRepository.getCommits());
     }
 
-//    @Test
-//    public void canGetCommitByID(){
-//
-//    }
+    @Test
+    public void canGetCommitByID(){
+        newRepository.addCommit(commit);
+        newRepository.addCommit(commit1);
+        assertEquals(commit1, newRepository.getCommitByID("2344"));
+    }
 
 }

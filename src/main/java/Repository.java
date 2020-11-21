@@ -34,7 +34,13 @@ public class Repository {
         this.commits.add(commit);
     }
 
-//    public void getCommitByID(Commit commit){
-//        if(this.commits)
-//    }
+    public Commit getCommitByID(String commitToFind){
+        Commit foundCommit = null;
+        for(Commit commit : this.commits){
+            if (commit.getID().equals(commitToFind)){
+                foundCommit = commit;
+            }
+        }
+        return foundCommit;
+    }
 }

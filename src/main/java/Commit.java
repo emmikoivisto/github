@@ -1,18 +1,20 @@
 public class Commit {
     private String description;
-    private int uniqueID;
+    private String uniqueID;
 
-    public Commit(String description, int uniqueID){
+    public Commit(String description, String uniqueID){
         this.description = description;
         this.uniqueID = uniqueID;
     }
 
-    public int getID(){
+    public String getID(){
         return this.uniqueID;
     }
 
     public String getDescription(){
         return this.description;
     }
+
+
 
 }

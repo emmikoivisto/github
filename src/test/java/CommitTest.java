@@ -9,12 +9,12 @@ public class CommitTest {
 
     @Before
     public void before(){
-        commit = new Commit("Initial commit", 2345);
+        commit = new Commit("Initial commit", "2345");
     }
 
     @Test
     public void checkCommitHasID(){
-        assertEquals(2345, commit.getID());
+        assertEquals("2345", commit.getID());
     }
 
     @Test
