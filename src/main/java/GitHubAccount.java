@@ -10,11 +10,15 @@ public class GitHubAccount {
         this.username = username;
         this.name = name;
         this.repositories = new ArrayList<>();
-        this.accountType = accountType;
+        this.accountType = accountType.FREE;
     }
 
     public AccountType getAccountType(){
         return this.accountType;
+    }
+
+    public AccountType changeAccountType(){
+        return this.accountType = accountType.PRO;
     }
 
     public String getUsername(){

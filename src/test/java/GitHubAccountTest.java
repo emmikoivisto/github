@@ -22,6 +22,11 @@ public class GitHubAccountTest {
     }
 
     @Test
+    public void canChangeAccountType(){
+        assertEquals(AccountType.PRO, gitHubAccount.changeAccountType());
+    }
+
+    @Test
     public void canGetUsername(){
         assertEquals("Coder", gitHubAccount.getUsername());
     }
