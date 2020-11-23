@@ -11,7 +11,7 @@ public class GitHubAccountTest {
 
     @Before
     public void before(){
-        gitHubAccount = new GitHubAccount("Coder", "Alfred", AccountType.FREE);
+        gitHubAccount = new GitHubAccount("Coder", "Alfred");
         repository = new Repository("GithubLab", "Weekend homework", RepositoryType.PRIVATE);
         repository1 = new Repository("Hotel Lab", "Homework", RepositoryType.PUBLIC);
     }
@@ -23,7 +23,8 @@ public class GitHubAccountTest {
 
     @Test
     public void canChangeAccountType(){
-        assertEquals(AccountType.PRO, gitHubAccount.changeAccountType());
+        gitHubAccount.setAccountType(AccountType.PRO);
+        assertEquals(AccountType.PRO, gitHubAccount.getAccountType());
     }
 
     @Test

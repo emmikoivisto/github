@@ -18,6 +18,14 @@ public class Repository {
         return this.repository;
     }
 
+    public void setRepoName(String repoName) {
+        this.repositoryName = repoName;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public int getCommits(){
         return commits.size();
     }

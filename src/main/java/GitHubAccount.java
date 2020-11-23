@@ -6,7 +6,7 @@ public class GitHubAccount {
     private ArrayList<Repository> repositories;
     private AccountType accountType;
 
-    public GitHubAccount(String username, String name, AccountType accountType){
+    public GitHubAccount(String username, String name){
         this.username = username;
         this.name = name;
         this.repositories = new ArrayList<>();
@@ -17,8 +17,8 @@ public class GitHubAccount {
         return this.accountType;
     }
 
-    public AccountType changeAccountType(){
-        return this.accountType = accountType.PRO;
+    public void setAccountType(AccountType accountType){
+        this.accountType = accountType;
     }
 
     public String getUsername(){
